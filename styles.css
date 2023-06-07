@@ -518,6 +518,10 @@ img {
   display: flex;
   justify-content: flex-start;
   padding-left: 24px;
+  border-left: 1px  solid #eeeeee;
+  border-right: 1px  solid #eeeeee;
+  border-bottom: 1px  solid #eeeeee;
+  border-top: none;
 }
 
 .project-list h1 {
@@ -538,7 +542,7 @@ img {
 }
 
 .portfolio-list-stile {
-  border: 1px solid #eeeeee;
+  
   margin-bottom: 30px;
 }
 
