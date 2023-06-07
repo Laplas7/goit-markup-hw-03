@@ -446,10 +446,12 @@ img {
 /* !!!!!!!!!!!!!!!!!!!!!!!Portfolio !!!!!!!!!!!!!!!!!!!!*/
 .list-btn button {
   background-color: var(--color-button-portfolio);
+  margin-right: 8px;
 }
 
 .list-btn {
   background-color: var(--background-color-white);
+  
 }
 
 .list-btn button:hover,
@@ -489,6 +491,7 @@ img {
 
 .port-btn-five {
   min-width: 130px;
+  margin-right: 0;
 }
 
 .port-mrg {
