@@ -16,6 +16,29 @@
   line-height: 1.19;
 }
 
+a{
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+li, p, ul, h1, h2 ,h3 , h4, h5, h6{
+  margin: 0;
+  padding: 0;
+}
+
 .flex-con {
   display: flex;
 }
@@ -27,6 +50,19 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.our-com-list{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  color: #212121;
+  padding-top: 30px;
+}
+
+.our-com-p{
+  padding-top: 10px;
+}
+
 
 .mein-list-p {
   font-weight: 400;
@@ -91,12 +127,7 @@ h3 h2 {
   text-align: center;
 }
 
-.our-comand-list h3 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.17;
-  color: #212121;
-}
+
 
 .our-comand-list p {
   font-weight: 400;
@@ -110,13 +141,16 @@ h3 h2 {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  color: #ffffff;
+  text-decoration: none;
+  
 }
 
 /*--------------- font portfolio -----------------*/
 
 .list-btn button {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.14;
 }
 
@@ -128,38 +162,47 @@ h3 h2 {
 
 /*--------------- Index Header--------------------- */
 
-.head-othr {
-  height: 80px;
+header {
+  border-bottom: 1px solid #ececec;
+}
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.container-head {
   display: flex;
 
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   align-items: center;
 }
 
-.head {
-  margin-right: 93px;
+.home-btn:visite {
+  color: #188ce8;
 }
 
-.home-btn:visited {
-  color: #188ce8;
+
+
+
+.a-list{
+  margin-right: 50px;
 }
 
 .home-btn {
   color: var(--decoration-color);
-  margin-right: 50px;
+  
 }
 
-.home-btn-port {
-  margin-right: 50px;
+.port-vis {
+  color: var(--decoration-color);
 }
 
 .portfolio-btn {
-  margin-right: 38px;
+  margin-right: 50px;
+}
+
+.nav-head{
+  margin-right: auto;
 }
 
 .logo {
@@ -169,22 +212,38 @@ h3 h2 {
 .logo-link {
   text-decoration: none;
   color: #000000;
+  margin-right: 93px;
 }
 
 .ul-indx-head {
   display: flex;
+  margin-right: auto;
 }
 
 .site-nav {
   margin-right: auto;
 }
 
-.site-nav a {
+.site-nav-visit  {
+  color: var(--decoration-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.14;
+}
+
+.site-nav-oth{
   color: var(--primari-color);
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.14;
+}
+
+
+.container-head .a-list {
+  padding-bottom: 25px;
+  padding-top: 24px;
 }
 
 .site-nav a:hover,
@@ -213,7 +272,7 @@ li {
   color: var(--second-color);
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   line-height: 1.14;
 }
@@ -230,29 +289,19 @@ li {
 }
 /* ---------------------Index Main ----------------------*/
 
-.hero {
-  display: flex;
 
-  width: 1200px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-top: 200px;
-  padding-right: 15px;
-  align-items: center;
-  justify-content: center;
+
+.hero {
+  background-color: var(--background-color-dark);
+  text-align: center;
+  padding-bottom: 200px;
 }
 /* 
 .hero:hover{
   cursor: pointer;
 } */
 
-.hero-style {
-  width: 600px;
-  height: 400px;
-  align-items: center;
-}
+
 
 button {
   display: inline;
@@ -262,26 +311,22 @@ button:hover {
   cursor: pointer;
 }
 
-.hero-bcg {
-  background-color: var(--background-color-dark);
-  text-align: center;
-}
-
 .hero-name {
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  padding: 200px 0 30px 0;
+  margin: 0;
 }
 
 .hero-btn {
   background-color: var(--decoration-color);
   color: #ffffff;
-  height: 50px;
-  min-width: 216px;
+  padding: 10px 32px 10px 32px;
   border-radius: 4px;
-  margin-top: 30px;
 }
 .img-desk h2 {
   text-align: center;
@@ -299,8 +344,13 @@ button:hover {
 /*-------------------------- List Desk --------------------*/
 .list-desk {
   background-color: var(--background-color-white);
+  padding-bottom: 94px;
 }
 
+li .h3 , li p , .mein-style .width-list{
+  padding: 0;
+  margin: 0;
+}
 .mrg-zero {
   margin-bottom: 0;
 }
@@ -315,11 +365,8 @@ button:hover {
 
 .mein-style {
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  padding-top: 174px;
-  justify-content: space-between;
+  gap: 30px;
+  padding-top: 200px;
 }
 
 .persona-list p {
@@ -340,11 +387,14 @@ button:hover {
 
 .our-work {
   color: var(--primari-color);
-  margin-bottom: 50px;
+margin: 0;
+padding: 0 0 50px 0;
 }
 
 .img-desk {
   background-color: var(--background-color-white);
+  padding-bottom: 94px;
+
 }
 
 .img-style {
@@ -360,8 +410,6 @@ img {
 
 .mrg-img {
   margin-right: 30px;
-
-  margin-bottom: 94px;
 }
 
 .mrg-img:last-child {
@@ -372,17 +420,21 @@ img {
 
 .our-comand-list {
   background-color: #f5f4fa;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 94px ;
 }
 
 .our-comand-img {
   background-color: var(--background-color-white);
   margin-right: 30px;
+  padding-bottom: 30px;
+}
+
+.our-comand-img:nth-child(4){
+  margin-right: 0;
 }
 
 .our-comand {
-  margin-bottom: 50px;
+  padding: 94px 0 50px 0;
 }
 
 .persona-list {
@@ -394,6 +446,15 @@ img {
 
 .footter-link {
   background-color: var(--background-color-dark);
+  padding-bottom: 60px;
+}
+
+.nav-footter{
+  padding-top: 9px;
+}
+
+.contacts-footer{
+  padding-top: 9px;
 }
 
 .address-footer {
@@ -401,12 +462,13 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  padding-top: 20px;
 }
-
 .logo-link-footer {
   text-decoration: none;
   color: #ffffff;
-  margin-bottom: 20px;
+  padding: 60px 0 0 0;
+  display: block;
 }
 
 .contacts-footer a:hover,
@@ -418,86 +480,51 @@ img {
   font-style: normal;
 }
 
-.container-footer {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 252px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.contacts-footer {
-  padding-left: 0;
-}
-
 .contacts-footer a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  margin-bottom: 6px;
+
 }
+
+
 
 .contacts-footer a:last-child {
   margin-bottom: 0;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!Portfolio !!!!!!!!!!!!!!!!!!!!*/
-.list-btn button {
-  background-color: var(--color-button-portfolio);
-  margin-right: 8px;
-}
 
-.list-btn {
-  background-color: var(--background-color-white);
-  
-}
+
 
 .list-btn button:hover,
 .list-btn button:focus {
   background-color: var(--decoration-color);
   color: #ffffff;
 }
+.list-btn-port{
+margin-right: 8px;
+}
+
+.list-btn-port:last-child{
+  margin-right: 0;
+}
 
 /* ----------------project-list -------------------*/
 
 .list-btn {
+  background-color: var(--background-color-white);
+  display: flex;
+  padding-top: 94px;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .port-btn-list {
-  height: 38px;
   border-radius: 4px;
+  padding: 6px 22px 6px 22px;
 }
 
-/* button portfolio */
-.port-btn-one {
-  min-width: 73px;
-}
-
-.port-btn-two {
-  min-width: 125px;
-}
-
-.port-btn-three {
-  min-width: 112px;
-}
-
-.port-btn-four {
-  min-width: 103px;
-}
-
-.port-btn-five {
-  min-width: 130px;
-  margin-right: 0;
-}
-
-.port-mrg {
-  padding-top: 94px;
-  padding-right: 0;
-  padding-left: 0;
+.btn-static:hover{
+padding: 6px 25px 6px 25px;
 }
 
 .list-btn .btn-static {
@@ -506,11 +533,10 @@ img {
 }
 
 .project-list {
+  padding-top: 50px;
   flex-wrap: wrap;
-
-  box-sizing: border-box;
-  margin-left: -19px;
   display: flex;
+  box-sizing: border-box;
   flex-basis: calc((100%-90px) / 3);
 }
 
@@ -518,9 +544,9 @@ img {
   display: flex;
   justify-content: flex-start;
   padding-left: 24px;
-  border-left: 1px  solid #eeeeee;
-  border-right: 1px  solid #eeeeee;
-  border-bottom: 1px  solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   border-top: none;
 }
 
@@ -542,7 +568,6 @@ img {
 }
 
 .portfolio-list-stile {
-  
   margin-bottom: 30px;
 }
 
