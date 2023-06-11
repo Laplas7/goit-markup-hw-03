@@ -295,6 +295,7 @@ li {
   background-color: var(--background-color-dark);
   text-align: center;
   padding-bottom: 200px;
+  padding-top: 200px;
 }
 
 
@@ -314,8 +315,6 @@ button:hover {
   line-height: 1.36;
   text-transform: uppercase;
   margin-bottom: 30px;
-  padding: 200px 0 30px 0;
-  margin: 0;
 }
 
 .hero-btn {
@@ -341,6 +340,7 @@ button:hover {
 .list-desk {
   background-color: var(--background-color-white);
   padding-bottom: 94px;
+  padding-top: 200px;
 }
 
 li .h3 , li p , .mein-style .width-list{
@@ -362,7 +362,7 @@ li .h3 , li p , .mein-style .width-list{
 .mein-style {
   display: flex;
   gap: 30px;
-  padding-top: 200px;
+  
 }
 
 .persona-list p {
@@ -383,8 +383,8 @@ li .h3 , li p , .mein-style .width-list{
 
 .our-work {
   color: var(--primari-color);
-margin: 0;
-padding: 0 0 50px 0;
+margin-bottom: 50px;
+
 }
 
 .img-desk {
@@ -417,6 +417,7 @@ img {
 .our-comand-list {
   background-color: #f5f4fa;
   padding-bottom: 94px ;
+  padding-top: 94px;
 }
 
 .our-comand-img {
@@ -430,7 +431,7 @@ img {
 }
 
 .our-comand {
-  padding: 94px 0 50px 0;
+  margin-bottom: 50px;
 }
 
 .persona-list {
@@ -442,29 +443,27 @@ img {
 
 .footter-link {
   background-color: var(--background-color-dark);
-  padding-bottom: 60px;
+  padding: 60px 0 60px 0;
 }
 
 .nav-footter{
-  padding-top: 9px;
+  margin-top: 9px;
 }
 
-.contacts-footer{
-  padding-top: 9px;
-}
+
 
 .address-footer {
   color: #ffffff;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  padding-top: 20px;
+  margin-bottom: 9px;
 }
 .logo-link-footer {
   text-decoration: none;
   color: #ffffff;
-  padding: 60px 0 0 0;
   display: block;
+  margin-bottom: 20px;
 }
 
 .contacts-footer a:hover,
@@ -510,8 +509,13 @@ margin-right: 8px;
 .list-btn {
   background-color: var(--background-color-white);
   display: flex;
-  padding-top: 94px;
+  
   justify-content: center;
+  margin-bottom: 50px;
+}
+
+.li-btn-p{
+  padding-top: 94px;
 }
 
 .port-btn-list {
@@ -529,7 +533,7 @@ padding: 6px 25px 6px 25px;
 }
 
 .project-list {
-  padding-top: 50px;
+  
   flex-wrap: wrap;
   display: flex;
   box-sizing: border-box;
