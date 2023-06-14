@@ -185,8 +185,7 @@ ul {
 
 
 
-
-.a-list{
+.mrg-head{
   margin-right: 50px;
 }
 
@@ -332,9 +331,16 @@ button:hover {
   text-transform: uppercase;
   margin-bottom: 30px;
   max-width: 696px;
-  display: inline-block;
+ margin-right: auto;
+ margin-left: auto;
 
   
+}
+
+
+
+.center{
+text-align: center;
 }
 
 .hero-btn {
